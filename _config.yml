@@ -24,10 +24,7 @@ email: recsys.info@gmail.com
 #  line in _config.yml. It will appear in your document head meta (for
 #  Google search results) and in your feed.xml site description.
 description: >- # this means to ignore newlines until "baseurl:"
-  We track the progress of Recommender Systems. We track the latest papers.
-  We track the latest events. And we also give useful tips!
-  Please subscribe by sending an email with the subject 'SUBSCRIBE' to 
-  recsys.info@gmail.com 
+  Track the top conferences for Recommender Systems. Coming soon: track the latest papers and job postings. Please subscribe by sending an email with the subject 'SUBSCRIBE' to recsys.info@gmail.com and tell us which aspect of Recommender Systems you would like us to keep an eye on.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
