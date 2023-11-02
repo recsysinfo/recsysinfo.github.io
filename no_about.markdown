@@ -1,5 +1,6 @@
 ---
 layout: page
+#Uncomment these two lines below to make the About page visible
 #title: About
 #permalink: /about/
 ---
