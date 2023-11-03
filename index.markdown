@@ -10,7 +10,7 @@ List of conferences, sorted by submission deadlines:
 
 | Conference | Rating | 2023 | 2024 | 2025 | 
 | :-: | :-: | --- | --- | --- | 
-| [ECML-PKDD](https://ecmlpkdd.org/)  | [A](http://portal.core.edu.au/conf-ranks/491/) | Papers ([[1]](https://2023.ecmlpkdd.org/program/accepted-papers/journal-track/) [[2](https://2023.ecmlpkdd.org/program/accepted-papers/research/) [[3]](https://2023.ecmlpkdd.org/program/accepted-papers/ads/) [[4]](https://2023.ecmlpkdd.org/program/accepted-papers/demo/)) [[Awards]](https://2023.ecmlpkdd.org/program/awards/)<br>📍 Torino, Italy<br>🍁 18-22 Sep | **Subm. due: 05 Dec 2023**<br>[[Website]](https://2024.ecmlpkdd.org/)<br>📍 Vilnius, Lithuania<br>🍁 09-13 Sep| TBA |
+| [ECML-PKDD](https://ecmlpkdd.org/)  | [A](http://portal.core.edu.au/conf-ranks/491/) | Papers ([[1]](https://2023.ecmlpkdd.org/program/accepted-papers/journal-track/) [[2]](https://2023.ecmlpkdd.org/program/accepted-papers/research/) [[3]](https://2023.ecmlpkdd.org/program/accepted-papers/ads/) [[4]](https://2023.ecmlpkdd.org/program/accepted-papers/demo/)) [[Awards]](https://2023.ecmlpkdd.org/program/awards/)<br>📍 Torino, Italy<br>🍁 18-22 Sep | **Subm. due: 05 Dec 2023**<br>[[Website]](https://2024.ecmlpkdd.org/)<br>📍 Vilnius, Lithuania<br>🍁 09-13 Sep| TBA |
 | [IJCAI](https://www.ijcai.org/) | [A*](http://portal.core.edu.au/conf-ranks/1313/) | [[Papers]](https://ijcai-23.org/paper-schedule/) [[Awards]](https://ijcai-23.org/ijcai-awards/)<br>📍 Macao, S.A.R<br>🌴 19-25 Aug | **Subm. due: 10 Jan 2024**<br>[[Website]](https://ijcai24.org/)<br>📍 Jeju Island, South Korea<br>🌴 03-09 Aug | TBA |
 | [SIGIR](https://sigir.org/)     | [A*](http://portal.core.edu.au/conf-ranks/29/)   | [[Papers]](https://sigir.org/sigir2023/program/proceedings/) [[Awards]](https://sigir.org/sigir2023/program/best-paper-award/)<br>📍 Taipei, Taiwan<br>🌴 22-27 Jul | **Subm. due: 18 Jan 2024**<br>[[Website]](https://sigir-2024.github.io)<br>📍 Washington D.C., USA<br>🌴 14-18 Jul | TBA | 
 | [SIGKDD](https://www.kdd.org/)  | [A*](http://portal.core.edu.au/conf-ranks/26/)   | [[Papers]](https://kdd.org/kdd2023/wp-content/uploads/2023/08/toc.html) [[Awards]](https://kdd.org/kdd2023/awards/)<br>📍 Long Beach, CA, USA<br>🌴 06-10 Aug | **Subm. due: ~ Feb 2024 (TBA)**<br>📍 TBA | TBA |
@@ -23,7 +23,14 @@ List of conferences, sorted by submission deadlines:
 | [ECIR](https://en.wikipedia.org/wiki/European_Conference_on_Information_Retrieval) | [A](http://portal.core.edu.au/conf-ranks/483/) | [[Papers]](https://ecir2023.org/programs/proceedings.html?v=3.8)<br>📍 Dublin, Ireland<br>🌿 02-06 Apr | [[Website]](https://www.ecir2024.org/)<br>📍 Glasgow, UK<br>🌿 24-28 Mar | **Subm. due: ~ Sep 2024 (TBA)**<br>📍 TBA|
 | [WWW](https://thewebconf.org/)  | [A*](http://portal.core.edu.au/conf-ranks/1548/) | [[Papers]](https://archives.iw3c2.org/www2023/proceedings/)<br>📍 Austin, Texas<br>🌿 30 Apr-04 May | [[Website]](https://www2024.thewebconf.org/)<br>📍 Singapore<br>🌴 13-17 May | **Subm. due: ~ Oct 2024 (TBA)**<br>📍 Sydney, Australia | 
 
-If you'd like to propose other Recommender System venues to track, please send them over to recsys.info@gmail.com
+| Journal |
+| ------- |
+| [ACM Computing Surveys](https://dl.acm.org/toc/csur/justaccepted) |
+| [ACM Transactions on Recommender Systems](https://dl.acm.org/toc/tors/justaccepted) | 
+| [IEEE Transactions on Knowledge and Data Engineering](https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=69) | 
+| [ACM Transactions on Information Systems](https://dl.acm.org/toc/tois/justaccepted) |
+
+<!-- If you'd like to propose other Recommender System venues to track, please send them over to admin@recsys.info -->
 
 <!--
 | AAAI?       |  | - | - | - |
