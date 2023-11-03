@@ -19,12 +19,12 @@
 # in the templates via {{ site.myvariable }}.
 
 title: ✨ Recommender Systems
-email: recsys.info@gmail.com
+email: admin@recsys.info
 #  Write an awesome description for your new site here. You can edit this
 #  line in _config.yml. It will appear in your document head meta (for
 #  Google search results) and in your feed.xml site description.
 description: >- # this means to ignore newlines until "baseurl:"
-  Track the top conferences for Recommender Systems. Coming soon: track the latest papers and job postings. Please subscribe by sending an email with the subject 'SUBSCRIBE' to recsys.info@gmail.com and tell us which aspect of Recommender Systems you would like us to keep an eye on.
+  Track the top conferences for Recommender Systems. Coming soon: track the latest papers and job postings. Please subscribe by sending an email with the subject 'SUBSCRIBE' to admin@recsys.info and tell us which aspect of Recommender Systems you would like us to keep an eye on.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
