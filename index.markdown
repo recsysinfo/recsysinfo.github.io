@@ -35,9 +35,9 @@ List of conferences, ordered by submission deadlines:
 | Journal |
 | ------- |
 | [ACM Computing Surveys](https://dl.acm.org/toc/csur/justaccepted) |
-| [ACM Transactions on Recommender Systems](https://dl.acm.org/toc/tors/justaccepted) | 
-| [IEEE Transactions on Knowledge and Data Engineering](https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=69) | 
-| [ACM Transactions on Information Systems](https://dl.acm.org/toc/tois/justaccepted) |
+| [ACM Transactions on Recommender Systems](https://dl.acm.org/toc/tors/justaccepted) (TORS |
+| [IEEE Transactions on Knowledge and Data Engineering](https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=69) (TKDE) |
+| [ACM Transactions on Information Systems](https://dl.acm.org/toc/tois/justaccepted) (TOIS) |
 
 
 <!--
@@ -53,7 +53,108 @@ TODO:
 [[Conferences]](#conferences) [[Journals]](#journals)
 
 
-ACM Computing Surveys, **Computational Technologies for Fashion Recommendation: A Survey**, 23 Oct 2023, [[PDF]](https://arxiv.org/pdf/2306.03395.pdf) [[DOI]](https://dl.acm.org/doi/10.1145/3627100)
+<br>
+ACM TORS,
+**CRS-Que: A User-Centric Evaluation Framework for Conversational Recommender Systems**,
+02 Nov 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3631534)
+[[DOI]](https://doi.org/10.1145/3631534)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	An increasing number of recommendation systems try to enhance the overall user experience by incorporating conversational interaction. However, evaluating conversational recommender systems (CRSs) from the user’s perspective remains elusive. The GUI-based system evaluation criteria may be inadequate for their conversational counterparts. This paper presents our proposed unifying framework, CRS-Que, to evaluate the user experience of CRSs. This new evaluation framework is developed based on ResQue, a popular user-centric evaluation framework for recommender systems. Additionally, it includes user experience metrics of conversation (e.g., understanding, response quality, humanness) under two dimensions of ResQue (i.e., Perceived Qualities and User Beliefs). Following the psychometric modeling method, we validate our framework by evaluating two conversational recommender systems in different scenarios: music exploration and mobile phone purchase. The results of the two studies support the validity and reliability of the constructs in our framework and reveal how conversation constructs and recommendation constructs interact and influence the overall user experience of the CRS. We believe this framework could help researchers conduct standardized user-centric research for conversational recommender systems and provide practitioners with insights into designing and evaluating a CRS from users’ perspectives.
+</details>
+
+
+<br>
+ACM TORS,
+**Exploring the Landscape of Recommender Systems Evaluation: Practices and Perspectives**,
+28 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3629170)
+[[DOI]](https://doi.org/10.1145/3629170)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Recommender systems research and practice are fast-developing topics with growing adoption in a wide variety of information access scenarios. In this paper, we present an overview of research specifically focused on the emphevaluation of recommender systems. We perform a systematic literature review, in which we analyze 57 papers spanning six years (2017–2022). Focusing on the processes surrounding evaluation, we dial in on the methods applied, the datasets utilized, and the metrics used. Our study shows that the predominant experiment type in research on the evaluation of recommender systems is offline experimentation and that online evaluations are primarily used in combination with other experimentation methods, e.g., an offline experiment. Furthermore, we find that only a few datasets (MovieLens, Amazon review dataset) are widely used, while many datasets are used in only a few papers each. We observe a similar scenario when analyzing the employed performance metrics—a few metrics are widely used (precision, nDCG, and Recall), while many others are used in only a few papers. Overall, our review indicates that beyond-accuracy qualities are rarely assessed. Our analysis shows that the research community working on evaluation has focused on the development of evaluation in a rather narrow scope, with the majority of experiments focusing on a few metrics, datasets, and methods.
+</details>
+
+
+<br>
+ACM TORS,
+**On Item-Sampling Evaluation for Recommender System**,
+27 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3629171)
+[[DOI]](https://doi.org/10.1145/3629171)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Personalized recommender system plays a crucial role in modern society, especially in e-commerce, news, and ads area. Correctly evaluating and comparing candidate recommendation models is as essential as constructing ones. The common offline evaluation strategy is holding out some user-interacted items from training data and evaluating the performance of recommendation models based on how many items they can retrieve. Specifically, for any hold-out item or so-called target item for a user, the recommendation models try to predict the probability that the user would interact with the item, and rank it among overall items, this is called global evaluation. Intuitively, a good recommendation model would assign high probabilities to such hold-out/target items. Based on the specific ranks, some metrics like Recall@K and NDCG@K can be calculated to further quantify the quality of the recommender model. Instead of ranking the target items among all items, Koren [22] first proposed to rank them among a small sampled set of items, and then quantified the performance of the models, this is called sampling evaluation. Ever since then, there has been a large amount of work adopting sampling evaluation due to its efficiency and frugality. In recent work, Rendle and Krichene [24, 32] argued that the sampling evaluation is ”inconsistent” with respect to a global evaluation in terms of offline top-k metrics.
+</details>
+
+
+<br>
+ACM TORS,
+**Generating Usage-related Questions for Preference Elicitation in Conversational Recommender Systems**
+27 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3629981)
+[[DOI]](https://doi.org/10.1145/3629981)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	A key distinguishing feature of conversational recommender systems over traditional recommender systems is their ability to elicit user preferences using natural language. Currently, the predominant approach to preference elicitation is to ask questions directly about items or item attributes. Users searching for recommendations may not have deep knowledge of the available options in a given domain. As such, they might not be aware of key attributes or desirable values for them. However, in many settings, talking about the planned use of items does not present any difficulties, even for those that are new to a domain. In this paper, we propose a novel approach to preference elicitation by asking implicit questions based on item usage. As one of the main contributions of this work, we develop a multi-stage data annotation protocol using crowdsourcing, to create a high-quality labeled training dataset. Another main contribution is the development of four models for the question generation task: two template-based baseline models and two neural text-to-text models. The template-based models use heuristically extracted common patterns found in the training data, while the neural models use the training data to learn to generate questions automatically. Using common metrics from machine translation for automatic evaluation, we show that our approaches are effective in generating elicitation questions, even with limited training data. We further employ human evaluation for comparing the generated questions using both pointwise and pairwise evaluation designs. We find that the human evaluation results are consistent with the automatic ones, allowing us to draw conclusions about the quality of the generated questions with certainty. Finally, we provide a detailed analysis of cases where the models show their limitations.
+</details>
+
+
+
+<br>
+ACM TORS,
+**Constrained Off-policy Learning over Heterogeneous Information for Fairness-aware Recommendation**,
+26 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3629172)
+[[DOI]](https://doi.org/10.1145/3629172)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Fairness-aware recommendation eliminates discrimination issues to build trustworthy recommendation systems. Existing fairness-aware approaches ignore accounting for rich user and item attributes and thus cannot capture the impact of attributes on affecting recommendation fairness. These real-world attributes severely cause unfair recommendations by favoring items with popular attributes, leading to item exposure unfairness in recommendations. Moreover, existing approaches mostly mitigate unfairness for static recommendation models, e.g., collaborative filtering. Static models can not handle dynamic user interactions with the system that reflect users’ preferences shift through time. Thus, static models are limited in their ability to adapt to user behavior shifts to gain long-run user satisfaction. As user and item attributes are largely involved in modern recommenders and user interactions are naturally dynamic, it is essential to develop a novel method that eliminates unfairness caused by attributes meanwhile embrace the dynamic modeling of user behavior shifts. In this paper, we propose Constrained Off-policy Learning over Heterogeneous Information for Fairness-aware Recommendation (Fair-HINpolicy), which uses recent advances in context-aware off-policy learning to produce fairness-aware recommendations with rich attributes from a Heterogeneous Information Network. In particular, we formulate the off-policy learning as a Constrained Markov Decision Process (CMDP) by dynamically constraining the fairness of item exposure at each iteration. We also design an attentive action sampling to reduce the search space for off-policy learning. Our solution adaptively receives HIN-augmented corrections for counterfactual risk minimization, and ultimately yields an effective policy that maximizes long-term user satisfaction. We extensively evaluate our method through simulations on large-scale real-world datasets, obtaining favorable results compared with state-of-the-art methods.
+</details>
+
+<br>
+ACM TORS,
+**Towards a Causal Decision-Making Framework for Recommender Systems**,
+26 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3629169)
+[[DOI]](https://doi.org/10.1145/3629169)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Causality is gaining more and more attention in the machine learning community and consequently also in recommender systems research. The limitations of learning offline from observed data are widely recognized, however, applying debiasing strategies like Inverse Propensity Weighting does not always solve the problem of making wrong estimates. This concept paper contributes a summary of debiasing strategies in recommender systems and the design of several toy examples demonstrating the limits of these commonly applied approaches. Therefore, we propose to map the causality frameworks of potential outcomes and structural causal models onto the recommender systems domain in order to foster future research and development. For instance, applying causal discovery strategies on offline data to learn the causal graph in order to compute counterfactuals or improve debiasing strategies.
+</details>
+
+
+<br>
+ACM TORS,
+**A Comprehensive Survey on Automated Machine Learning for Recommendations**,
+26 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3630104)
+[[DOI]](https://doi.org/10.1145/3630104)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Deep recommender systems (DRS) are critical for current commercial online service providers, which address the issue of information overload by recommending items that are tailored to the user’s interests and preferences. They have unprecedented feature representations effectiveness and the capacity of modeling the non-linear relationships between users and items. Despite their advancements, DRS models, like other deep learning models, employ sophisticated neural network architectures and other vital components that are typically designed and tuned by human experts. This article will give a comprehensive summary of automated machine learning (AutoML) for developing DRS models. We first provide an overview of AutoML for DRS models and the related techniques. Then we discuss the state-of-the-art AutoML approaches that automate the feature selection, feature embeddings, feature interactions, and model training in DRS. We point out that the existing AutoML-based recommender systems are developing to a multi-component joint search with abstract search space and efficient search algorithm. Finally, we discuss appealing research directions and summarize the survey.
+</details>
+
+<br>
+ACM Computing Surveys,
+**Computational Technologies for Fashion Recommendation: A Survey**,
+23 Oct 2023,
+[[PDF]](https://arxiv.org/pdf/2306.03395.pdf) [[DOI]](https://dl.acm.org/doi/10.1145/3627100)
 <details>
 	<summary>
 		Abstract
@@ -62,7 +163,11 @@ ACM Computing Surveys, **Computational Technologies for Fashion Recommendation: 
 </details>
 
 <br>
-ACM Computing Surveys, **A Review of Modern Fashion Recommender Systems**, 21 Oct 2023, [[PDF]](https://arxiv.org/pdf/2202.02757.pdf) [[DOI]](https://dl.acm.org/doi/10.1145/3624733)
+ACM Computing Surveys,
+**A Review of Modern Fashion Recommender Systems**,
+21 Oct 2023,
+[[PDF]](https://arxiv.org/pdf/2202.02757.pdf)
+[[DOI]](https://dl.acm.org/doi/10.1145/3624733)
 <details>
 	<summary>
 		Abstract
@@ -70,6 +175,7 @@ ACM Computing Surveys, **A Review of Modern Fashion Recommender Systems**, 21 Oc
 	The textile and apparel industries have grown tremendously over the past few years. Customers no longer have to visit many stores, stand in long queues, or try on garments in dressing rooms, as millions of products are now available in online catalogs. However, given the plethora of options available, an effective recommendation system is necessary to properly sort, order, and communicate relevant product material or information to users. Effective fashion recommender systems (RSs) can have a noticeable impact on billions of customers’ shopping experiences and increase sales and revenues on the provider side.
 	The goal of this survey is to provide a review of RSs that operate in the specific vertical domain of garment and fashion products. We have identified the most pressing challenges in fashion RS research and created a taxonomy that categorizes the literature according to the objective they are trying to accomplish (e.g., item or outfit recommendation, size recommendation, and explainability, among others) and type of side information (users, items, context). We have also identified the most important evaluation goals and perspectives (outfit generation, outfit recommendation, pairing recommendation, and fill-in-the-blank outfit compatibility prediction) and the most commonly used datasets and evaluation metrics.
 </details>
+
 
 <!--
 IEEE Transactions on Knowledge and Data Engineering
