@@ -7,7 +7,7 @@ layout: home
 
 [[Conferences]](#conferences) [[Journals]](#journals) [[Recent Articles]](#recent-articles)
 
-We track Recommender Systems.
+We track Recommender Systems so you don't have to.
 
 ## **Conferences**
 
@@ -52,6 +52,12 @@ TODO:
 ## **Recent Articles**
 [[Conferences]](#conferences) [[Journals]](#journals)
 
+<!--
+TODO:
+- CIKM 2023 papers keyword: recom (still 10%), (NEXT 08 NOV) click, ctr, user, item, lifelong
+- TKDE Oct/Nov papers (NEXT 09 NOV)
+- TOIS Oct/Nov papers
+-->
 
 <br>
 ACM TORS,
@@ -175,6 +181,192 @@ ACM Computing Surveys,
 	The textile and apparel industries have grown tremendously over the past few years. Customers no longer have to visit many stores, stand in long queues, or try on garments in dressing rooms, as millions of products are now available in online catalogs. However, given the plethora of options available, an effective recommendation system is necessary to properly sort, order, and communicate relevant product material or information to users. Effective fashion recommender systems (RSs) can have a noticeable impact on billions of customers’ shopping experiences and increase sales and revenues on the provider side.
 	The goal of this survey is to provide a review of RSs that operate in the specific vertical domain of garment and fashion products. We have identified the most pressing challenges in fashion RS research and created a taxonomy that categorizes the literature according to the objective they are trying to accomplish (e.g., item or outfit recommendation, size recommendation, and explainability, among others) and type of side information (users, items, context). We have also identified the most important evaluation goals and perspectives (outfit generation, outfit recommendation, pairing recommendation, and fill-in-the-blank outfit compatibility prediction) and the most commonly used datasets and evaluation metrics.
 </details>
+
+<br>
+CIKM 2023,
+**Optimizing for Member Value in an Edge Building Marketplace**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3615000)
+[[DOI]](https://doi.org/10.1145/3583780.3615000)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Social networks are prosperous marketplaces where creators and consumers congregate to share and consume various content. In general, products that rank content for distribution (such as newsfeeds, stories, and notifications) and are related to edge recommendations (such as connect to members, follow celebrities or groups or hashtags) optimize the experience of active users. Typically, such users generate ample interaction data amenable to accurate model training and prediction. In contrast, we prioritize enhancing the experience of inactive members (IMs) who do not have a rich connection network. We formulate strategies for recommending superior edges to help members grow their connection network. Adapting the recommendations provides enormous value to the IMs and can significantly influence their future behaviour and engagement with the ecosystem. To that end, we propose a general and scalable multi-objective optimization (MOO) framework to provide more value to IMs as invitation recipients on LinkedIn, a professional network with over 900M members. To deal with the enormous scale, we formulate the problem as a massive constrained linear optimization involving billions of variables and millions of constraints and efficiently solve it using accelerated gradient descent,making this the largest deployment of LP-based recommender systems worldwide. Furthermore, the proposed MOO paradigm can solve the general problem of matching different types of entities in an m-sided marketplace. Finally, we discuss the challenges and benefits of implementing and ramping our method in production at scale at LinkedIn and report our findings about the core business metrics related to users' engagement and network health.
+</details>
+
+<br>
+CIKM 2023,
+**Multi-modal Mixture of Experts Represetation Learning for Sequential Recommendation**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3614978)
+[[DOI]](https://doi.org/10.1145/3583780.3614978)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Within online platforms, it is critical to capture the dynamic user preference from the sequential interaction behaviors for making accurate recommendation over time. Recently, significant progress has been made in sequential recommendation with deep learning. However, existing neural sequential recommender often suffer from the data sparsity issue in real-world applications.
+	To tackle this problem, we propose a Multi-Modal Mixture of experts model for Sequential Recommendation, named M3SRec, which leverage rich multi-modal interaction data for improving sequential recommendation. Different from existing multi-modal recommendation models, our approach jointly considers reducing the semantic gap across modalities and adapts multi-modal semantics to fit recommender systems. For this purpose, we make two important technical contributions in architecture and training. Firstly, we design a novel multi-modal mixture-of-experts (MoE) fusion network, which can deeply fuse the across-modal semantics and largely enhance the modeling capacity of complex user intents. For training, we design specific pre-training tasks that can mimic the goal of the recommendation, which help model learn the semantic relatedness between the multi-modal sequential context and the target item. Extensive experiments conducted on both public and industry datasets demonstrate the superiority of our proposed method over existing state-of-the-art methods, especially when only limited training data is available.
+</details>
+
+
+<br>
+CIKM 2023,
+**CPMR: Context-Aware Incremental Sequential Recommendation with Pseudo-Multi-Task Learning**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3615512)
+[[DOI]](https://doi.org/10.1145/3583780.3615512)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	The motivations of users to make interactions can be divided into static preference and dynamic interest. To accurately model user representations over time, recent studies in sequential recommendation utilize information propagation and evolution to mine from batches of arriving interactions. However, they ignore the fact that people are easily influenced by the recent actions of other users in the contextual scenario, and applying evolution across all historical interactions dilutes the importance of recent ones, thus failing to model the evolution of dynamic interest accurately. To address this issue, we propose a Context-Aware Pseudo-Multi-Task Recommender System (CPMR) to model the evolution in both historical and contextual scenarios by creating three representations for each user and item under different dynamics: static embedding, historical temporal states, and contextual temporal states. To dually improve the performance of temporal states evolution and incremental recommendation, we design a Pseudo-Multi-Task Learning (PMTL) paradigm by stacking the incremental single-target recommendations into one multi-target task for joint optimization. Within the PMTL paradigm, CPMR employs a shared-bottom network to conduct the evolution of temporal states across historical and contextual scenarios, as well as the fusion of them at the user-item level. In addition, CPMR incorporates one real tower for incremental predictions, and two pseudo towers dedicated to updating the respective temporal states based on new batches of interactions. Experimental results on four benchmark recommendation datasets show that CPMR consistently outperforms state-of-the-art baselines and achieves significant gains on three of them. The source code is available at https://github.com/DiMarzioBian/CPMR.
+</details>
+
+
+<br>
+CIKM 2023,
+**How Expressive are Graph Neural Networks in Recommendation?**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3614917)
+[[DOI]](https://doi.org/10.1145/3583780.3614917)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Graph Neural Networks (GNNs) have demonstrated superior performance in various graph learning tasks, including recommendation, where they explore user-item collaborative filtering signals within graphs. However, despite their empirical effectiveness in state-of-the-art recommender models, theoretical formulations of their capability are scarce. Recently, researchers have explored the expressiveness of GNNs, demonstrating that message passing GNNs are at most as powerful as the Weisfeiler-Lehman test, and that GNNs combined with random node initialization are universal. Nevertheless, the concept of "expressiveness" for GNNs remains vaguely defined. Most existing works adopt the graph isomorphism test as the metric of expressiveness, but this graph-level task may not effectively assess a model's ability in recommendation, where the objective is to distinguish nodes of different closeness. In this paper, we provide a comprehensive theoretical analysis of the expressiveness of GNNs in recommendation, considering three levels of expressiveness metrics: graph isomorphism (graph-level), node automorphism (node-level), and topological closeness (link-level). We propose the topological closeness metric to evaluate GNNs' ability to capture the structural distance between nodes, which closely aligns with the recommendation objective. To validate the effectiveness of this new metric in evaluating recommendation performance, we introduce a learning-less GNN algorithm that is optimal on the new metric and can be optimal on the node-level metric with suitable modification. We conduct extensive experiments comparing the proposed algorithm against various types of state-of-the-art GNN models to explore the effectiveness of the new metric in the recommendation task. For the sake of reproducibility, implementation codes are available at https://github.com/HKUDS/GTE.
+</details>
+
+
+<br>
+CIKM 2023,
+**TPUF: Enhancing Cross-domain Sequential Recommendation via Transferring Pre-trained User Features**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3615094)
+[[DOI]](https://doi.org/10.1145/3583780.3615094)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Sequential recommendation has long been challenged by data sparsity issues. Most recently, cross-domain sequential recommendation (CDSR) techniques have been proposed to leverage sequential interaction data from other domains. However, accessing raw data from source domains is often restricted due to privacy concerns. To tackle this issue, we introduce TPUF, a novel CDSR model that transfers pre-trained latent user features from the source domain (UFS) instead of the original interaction data. By doing so, TPUF improves recommendation effectiveness while maintaining practicality. TPUF has three functional characteristics: (1) It is a feature mapping-and-aggregation framework that does not impose specific constraints on the nature of pre-trained UFS. (2) It incorporates a temporal feature mapping unit to effectively extract domain-shared information from UFS with temporal information recovered. (3) It additionally employs an adversarial feature alignment unit to align features across domains to combat feature transfer bias. Experimental results on real-world datasets demonstrate that TPUF outperforms other state-of-the-art cross-domain recommendation models and is compatible with multiple UFS types.
+</details>
+
+
+<br>
+CIKM 2023,
+**CLSPRec: Contrastive Learning of Long and Short-term Preferences for Next POI Recommendation**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3614813)
+[[DOI]](https://doi.org/10.1145/3583780.3614813)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Next point-of-interest (POI) recommendation optimizes user travel experiences and enhances platform revenues by providing users with potentially appealing next location choices. In recent research, scholars have successfully mined users' general tastes and varying interests by modeling long-term and short-term check-in sequences. However, conventional methods for long and short-term modeling predominantly employ distinct encoders to process long and short-term interaction data independently, with disparities in encoders and data limiting the ultimate performance of these models. Instead, we propose a shared trajectory encoder and a novel Contrastive learning of Long and Short-term Preferences for next POI Recommendation (CLSPRec) model to better utilize the preference similarity among the same users and distinguish different users' travel preferences for more accurate next POI prediction. CLSPRec adopts a masking strategy in long-term sequences to enhance model robustness and further strengthens user representation through short-term sequences. Extensive experiments on three real-world datasets validate the superiority of our model. Our code is publicly available at https://github.com/Wonderdch/CLSPRec.
+</details>
+
+
+<br>
+CIKM 2023,
+**Zero-shot Item-based Recommendation via Multi-task Product Knowledge Graph Pre-Training**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3615110)
+[[DOI]](https://doi.org/10.1145/3583780.3615110)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Existing recommender systems face difficulties with zero-shot items, i.e. items that have no historical interactions with users during the training stage. Though recent works extract universal item representation via pre-trained language models (PLMs), they ignore the crucial item relationships. This paper presents a novel paradigm for the Zero-Shot Item-based Recommendation (ZSIR) task, which pre-trains a model on product knowledge graph (PKG) to refine the item features from PLMs. We identify three challenges for pre-training PKG, which are multi-type relations in PKG, semantic divergence between item generic information and relations and domain discrepancy from PKG to downstream ZSIR task. We address the challenges by proposing four pre-training tasks and novel task-oriented adaptation (ToA) layers. Moreover, this paper discusses how to fine-tune the model on new recommendation task such that the ToA layers are adapted to ZSIR task. Comprehensive experiments on 18 markets dataset are conducted to verify the effectiveness of the proposed MPKG model.
+</details>
+
+
+<br>
+CIKM 2023,
+**Batch-Mix Negative Sampling for Learning Recommendation Retrievers**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3614789)
+[[DOI]](https://doi.org/10.1145/3583780.3614789)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Recommendation retrievers commonly retrieve user potentially preferred items from numerous items, where the query and item representation are learned according to the dual encoders with the log-softmax loss. Under real scenarios, the number of items becomes considerably large, making it exceedingly difficult to calculate the partition function with the whole item corpus. Negative sampling, which samples a subset from the item corpus, is widely used to accelerate the model training. Among different samplers, the in-batch sampling is commonly adopted for online recommendation retrievers, which regards the other items within the mini-batch as the negative samples for the given query, owing to its time and memory efficiency. However, the sample selection bias occurs due to the skewed feedback, harming the retrieval quality. In this paper, we propose a negative sampling approach named Batch-Mix Negative Sampling (BMNS), which adopts batch mixing operation to generate additional negatives for model training. Concretely, BMNS first generates new negative items with the sampled mix coefficient from the Beta distribution, after which a tailored correct strategy guided by frequency is designed to match the sampled softmax loss. In this way, the effort of re-encoding items out of the mini-batch is reduced while also improving the representation space of the negative set. The empirical experiments on four real-world datasets demonstrate BMNS is superior to the competitive negative inbatch sampling method.
+</details>
+
+
+<br>
+CIKM 2023,
+**KG4Ex: An Explainable Knowledge Graph-Based Approach for Exercise Recommendation**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3614943)
+[[DOI]](https://doi.org/10.1145/3583780.3614943)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Effective exercise recommendation is crucial for guiding students' learning trajectories and fostering their interest in the subject matter. However, the vast exercise resource and the varying learning abilities of individual students pose a significant challenge in selecting appropriate exercise questions. Collaborative filtering-based methods often struggle with recommending suitable exercises, while deep learning-based methods lack explanation, limiting their practical adoption. To address these limitations, this paper proposes KG4Ex, a knowledge graph-based exercise recommendation method. KG4Ex facilitates the matching of diverse students with suitable exercises while providing recommendation reasons. Specifically, we introduce a feature extraction module to represent students' learning states and construct a knowledge graph for exercise recommendation. This knowledge graph comprises three key entities (knowledge concepts, students, and exercises) and their interrelationships, and can be used to recommend suitable exercises. Extensive experiments on three real-world datasets and expert interviews demonstrate the superiority of KG4Ex over existing baseline methods and highlight its strong explainability.
+</details>
+
+
+<br>
+CIKM 2023,
+**Query-dominant User Interest Network for Large-Scale Search Ranking**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3615022)
+[[DOI]](https://dl.acm.org/doi/10.1145/3583780.3615022)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Historical behaviors have shown great effect and potential in various prediction tasks, including recommendation and information retrieval. The overall historical behaviors are various but noisy while search behaviors are always sparse. Most existing approaches in personalized search ranking adopt the sparse search behaviors to learn representation with bottleneck, which do not sufficiently exploit the crucial long-term interest. In fact, there is no doubt that user long-term interest is various but noisy for instant search, and how to exploit it well still remains an open problem.
+	To tackle this problem, in this work, we propose a novel model named Query-dominant user Interest Network (QIN), including two cascade units to filter the raw user behaviors and reweigh the behavior subsequences. Specifically, we propose a relevance search unit (RSU), which aims to search a subsequence relevant to the query first and then search the sub-subsequences relevant to the target item. These items are then fed into an attention unit called Fused Attention Unit (FAU). It should be able to calculate attention scores from the ID field and attribute field separately, and then adaptively fuse the item embedding and content embedding based on the user engagement of past period. Extensive experiments and ablation studies on real-world datasets demonstrate the superiority of our model over state-of-the-art methods. The QIN now has been successfully deployed on Kuaishou search, an online video search platform, and obtained 7.6% improvement on CTR.
+</details>
+
+
+<br>
+CIKM 2023,
+**Targeted Shilling Attacks on GNN-based Recommender Systems**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3615073)
+[[DOI]](https://dl.acm.org/doi/10.1145/3583780.3615073)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	GNN-based recommender systems have shown their vulnerability to shilling attacks in recent studies. By conducting shilling attacks on recommender systems, the attackers aim to have homogeneous impacts on all users. However, such indiscriminate attacks suffer from a waste of resources because even if the target item is promoted to users who are not interested, they are unlikely to click on them. In this paper, we conduct targeted shilling attacks in GNN-based recommender systems. By automatically constructing the features and edges of the fake users, our proposed framework AutoAttack achieves accurate attacks on a specific group of users while minimizing the impact on non-target users. Specifically, the features of fake users are generated based on a similarity function, which is optimized according to the features of target users. The structure of fake users is learned by conducting spectral clustering on the target users based on their graph Laplacian matrix, which contains the degree and adjacency information that provides guidance to the edge generation of fake users. We conduct extensive experiments on four real-world datasets in different GNN-based RS and evaluate the performance of our method on the shilling attack and recommendation tasks comprehensively, showing the effectiveness and flexibility of our framework.
+</details>
+
+
+<br>
+CIKM 2023,
+**Robust Basket Recommendation via Noise-tolerated Graph Contrastive Learning**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3615039)
+[[DOI]](https://dl.acm.org/doi/10.1145/3583780.3615039)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	The growth of e-commerce has seen a surge in popularity of platforms like Amazon, eBay, and Taobao. This has given rise to a unique shopping behavior involving baskets - sets of items purchased together. As a less studied interaction mode in the community, the question of how should shopping basket complement personalized recommendation systems remains under-explored. While previous attempts focused on jointly modeling user purchases and baskets, the distinct semantic nature of these elements can introduce noise when directly integrated. This noise negatively impacts the model's performance, further exacerbated by significant noise (e.g., a user is misled to click an item or recognizes it as uninteresting after consuming it) within both user and basket behaviors. In order to cope with the above difficulties, we propose a novel Basket recommendation framework via Noise-tolerated Contrastive Learning, named BNCL, to handle the noise existing in the cross-behavior integration and within-behavior modeling. First, we represent the basket-item interactions as the hypergraph to model the complex basket behavior, where all items appearing in the same basket are treated as a single hyperedge. Second, cross-behavior contrastive learning is designed to suppress the noise during the fusion of diverse behaviors. Next, to further inhibit the within-behavior noise of the user and basket interactions, we propose to exploit invariant properties of the recommenders w.r.t augmentations through within-behavior contrastive learning. A novel consistency-aware augmentation approach is further designed to better identify the noisy interactions with the consideration of the above two types of interactions. Our framework BNCL offers a generic training paradigm that is applicable to different backbones. Extensive experiments on three shopping transaction datasets verify the effectiveness of our proposed method.
+</details>
+
+
+<br>
+CIKM 2023,
+**Large Language Models as Zero-Shot Conversational Recommenders**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3614949)
+[[DOI]](https://dl.acm.org/doi/10.1145/3583780.3614949)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	In this paper, we present empirical studies on conversational recommendation tasks using representative large language models in a zero-shot setting with three primary contributions. (1) Data: To gain insights into model behavior in "in-the-wild" conversational recommendation scenarios, we construct a new dataset of recommendation-related conversations by scraping a popular discussion website. This is the largest public real-world conversational recommendation dataset to date. (2) Evaluation: On the new dataset and two existing conversational recommendation datasets, we observe that even without fine-tuning, large language models can outperform existing fine-tuned conversational recommendation models. (3) Analysis: We propose various probing tasks to investigate the mechanisms behind the remarkable performance of large language models in conversational recommendation. We analyze both the large language models' behaviors and the characteristics of the datasets, providing a holistic understanding of the models' effectiveness, limitations and suggesting directions for the design of future conversational recommenders.
+</details>
+
+
+
+
 
 
 <!--
