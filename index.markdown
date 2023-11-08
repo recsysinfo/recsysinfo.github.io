@@ -54,10 +54,11 @@ TODO:
 
 <!--
 TODO:
-- CIKM 2023 papers keyword: recom (still 10%), (NEXT 08 NOV) click, ctr, user, item, lifelong
+- CIKM 2023 papers keyword: recom (still 10%), click (still 10/66), ctr, user, item, lifelong, conversion
 - TKDE Oct/Nov papers (NEXT 09 NOV)
 - TOIS Oct/Nov papers
 -->
+
 
 <br>
 ACM TORS,
@@ -181,6 +182,46 @@ ACM Computing Surveys,
 	The textile and apparel industries have grown tremendously over the past few years. Customers no longer have to visit many stores, stand in long queues, or try on garments in dressing rooms, as millions of products are now available in online catalogs. However, given the plethora of options available, an effective recommendation system is necessary to properly sort, order, and communicate relevant product material or information to users. Effective fashion recommender systems (RSs) can have a noticeable impact on billions of customers’ shopping experiences and increase sales and revenues on the provider side.
 	The goal of this survey is to provide a review of RSs that operate in the specific vertical domain of garment and fashion products. We have identified the most pressing challenges in fashion RS research and created a taxonomy that categorizes the literature according to the objective they are trying to accomplish (e.g., item or outfit recommendation, size recommendation, and explainability, among others) and type of side information (users, items, context). We have also identified the most important evaluation goals and perspectives (outfit generation, outfit recommendation, pairing recommendation, and fill-in-the-blank outfit compatibility prediction) and the most commonly used datasets and evaluation metrics.
 </details>
+
+<br>
+CIKM 2023,
+**Dually Enhanced Delayed Feedback Modeling for Streaming Conversion Rate Prediction**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3614856)
+[[DOI]](https://dl.acm.org/doi/10.1145/3583780.3614856)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	In online industrial advertising systems, conversion actions (e.g., purchases or downloads) often occur significantly delayed, even up to several days or weeks after the user clicks. This phenomenon leads to the crucial challenge calleddelayed feedback problem in streaming CVR prediction, that is, the online systems cannot receive the true label of conversions immediately for continuous training. To mitigate the delayed feedback problem, recent state-of-the-art methods often apply sample duplicate mechanisms to introduce early certain conversion information. Nevertheless, these works have overlooked a crucial issue of rapid shifts in data distribution and considered both the newly observed data and duplicated early data together, resulting in biases in both distributions. In this work, we propose a Dually enhanced Delayed Feedback Model (DDFM), which tackles the above issues by treating the newly observed data and duplicated early data separately. DDFM consists of dual unbiased CVR estimators that share the same form but utilize different latent variables as weights: one for the newly observed data and the other for the duplicated early data. To avoid high variance, we adopt an addition-only formula for these latent variables, eliminating multiplication or division operations. Furthermore, we design a shared-bottom network that efficiently and jointly estimates the latent variables in DDFM. Theoretical analysis demonstrates the unbiasedness and convergence properties of DDFM. Extensive experiments on both public and industrial large-scale real-world datasets exhibit that our proposed DDFM consistently outperforms existing state-of-the-art methods.
+</details>
+
+<br>
+CIKM 2023,
+**Nudging Neural Click Prediction Models to Pay Attention to Position**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3614994)
+[[DOI]](https://dl.acm.org/doi/10.1145/3583780.3614994)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Predicting the click-through rate (CTR) of an item is a fundamental task in online advertising and recommender systems. CTR prediction models are typically trained on user click data from traffic logs. However, users are more likely to interact with items that were shown prominently on a website. CTR models often over-estimate the value of such items and show them more often, at the expense of items of higher quality that were previously shown at less prominent positions. This self-reinforcing position bias effect reduces both the immediate and long-term quality of recommendations for users. In this paper, we revisit position bias in a family of state-of-the-art neural models for CTR prediction, and use synthetic data to demonstrate the difficulty of controlling for position. We propose an approach that encourages neural networks to use position (or other confounding variables) as much as possible to explain the training data, and a metric that can directly measure bias. Experiments on two real-world datasets demonstrate the effectiveness of our approach in correcting for position-like features in 2 state-of-the-art CTR prediction models.
+</details>
+
+<br>
+CIKM 2023,
+**IUI: Intent-Enhanced User Interest Modeling for Click-Through Rate Prediction**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3614939)
+[[DOI]](https://dl.acm.org/doi/10.1145/3583780.3614939)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Click-Through Rate (CTR) prediction is becoming increasingly vital in many industrial applications, such as recommendations and online advertising. How to precisely capture users' dynamic and evolving interests from previous interactions (e.g., clicks, purchases, etc.) is a challenging task in CTR prediction. Mainstream approaches focus on disentangling user interests in a heuristic way or modeling user interests into a static representation. However, these approaches overlook the importance of users' current intent and the complex interactions between their current intent and global interests. To address these concerns, in this paper, we propose a novel intent-enhanced user interest modeling for click-through rate prediction in large-scale e-commerce recommendations, abbreviated as IUI. Methodologically, different from existing works, we consider users' recent interactions to be inspired by their implicit intent and then leverage an intent-aware network to model their current local interests in a more precise and fine-grained manner. In addition, to obtain a more stable co-dependent global and local interest representation, we employ a co-attention network capable of activating the corresponding interest in global-level interactions and capturing the dynamic interactions between global- and local-level interaction behaviors. Finally, we incorporate self-supervised learning into the model training by maximizing the mutual information between the global and local representations obtained via the above two networks to enhance the CTR prediction performance. Compared with existing methods, IUI benefits from the different granularity of user interest to generate a more accurate and comprehensive preference representation. Experimental results demonstrate that the proposed model outperforms previous state-of-the-art methods in various metrics on three real-world datasets. In addition, an online A/B test deployed on the JD recommendation platforms shows a promising improvement across multiple evaluation metrics.
+</details>
+
 
 <br>
 CIKM 2023,
