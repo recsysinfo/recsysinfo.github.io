@@ -11,6 +11,12 @@ We track Recommender Systems so you don't have to.
 
 ## **Conferences**
 
+<!--
+TODO:
+- Add NeurIPS and ICML
+- Add ACL and EMNLP?
+-->
+
 List of conferences, ordered by submission deadlines:
 
 | Conference | Rating | 2023 | 2024 | 2025 | 
@@ -40,24 +46,19 @@ List of conferences, ordered by submission deadlines:
 | [ACM Transactions on Information Systems](https://dl.acm.org/toc/tois/justaccepted) (TOIS) |
 
 
-<!--
-TODO:
-- include EMNLP or ACL above?
-- get recent articles on ACM computing surveys?
-- and perhaps the recent articles on TORS?
-- or recent articles on TKDE
-- recent articles on TOIS
--->
 
 ## **Recent Articles**
 [[Conferences]](#conferences) [[Journals]](#journals)
 
 <!--
 TODO:
-- CIKM 2023 papers keyword: recom (still 10%), click (still 10/66), ctr, user, item, lifelong, conversion
+- CIKM 2023 papers keyword: recom (still 10%), click (still 22/66), ctr, user, item, lifelong, conversion
 - TKDE Oct/Nov papers (NEXT 09 NOV)
 - TOIS Oct/Nov papers
 -->
+
+
+
 
 
 <br>
@@ -181,6 +182,71 @@ ACM Computing Surveys,
 	</summary>
 	The textile and apparel industries have grown tremendously over the past few years. Customers no longer have to visit many stores, stand in long queues, or try on garments in dressing rooms, as millions of products are now available in online catalogs. However, given the plethora of options available, an effective recommendation system is necessary to properly sort, order, and communicate relevant product material or information to users. Effective fashion recommender systems (RSs) can have a noticeable impact on billions of customers’ shopping experiences and increase sales and revenues on the provider side.
 	The goal of this survey is to provide a review of RSs that operate in the specific vertical domain of garment and fashion products. We have identified the most pressing challenges in fashion RS research and created a taxonomy that categorizes the literature according to the objective they are trying to accomplish (e.g., item or outfit recommendation, size recommendation, and explainability, among others) and type of side information (users, items, context). We have also identified the most important evaluation goals and perspectives (outfit generation, outfit recommendation, pairing recommendation, and fill-in-the-blank outfit compatibility prediction) and the most commonly used datasets and evaluation metrics.
+</details>
+
+<br>
+CIKM 2023,
+**Towards Deeper, Lighter and Interpretable Cross Network for CTR Prediction**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3615089)
+[[DOI]](https://dl.acm.org/doi/10.1145/3583780.3615089)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Click Through Rate (CTR) prediction plays an essential role in recommender systems and online advertising. It is crucial to effectively model feature interactions to improve the prediction performance of CTR models. However, existing methods face three significant challenges. First, while most methods can automatically capture high-order feature interactions, their performance tends to diminish as the order of feature interactions increases. Second, existing methods lack the ability to provide convincing interpretations of the prediction results, especially for high-order feature interactions, which limits the trustworthiness of their predictions. Third, many methods suffer from the presence of redundant parameters, particularly in the embedding layer. This paper proposes a novel method called Gated Deep Cross Network (GDCN) and a Field-level Dimension Optimization (FDO) approach to address these challenges. As the core structure of GDCN, Gated Cross Network (GCN) captures explicit high-order feature interactions and dynamically filters important interactions with an information gate in each order. Additionally, we use the FDO approach to learn condensed dimensions for each field based on their importance. Comprehensive experiments on five datasets demonstrate the effectiveness, superiority and interpretability of GDCN. Moreover, we verify the effectiveness of FDO in learning various dimensions and reducing model parameters. The code is available on https://github.com/anonctr/GDCN.
+</details>
+
+<br>
+CIKM 2023,
+**A Generalized Propensity Learning Framework for Unbiased Post-Click Conversion Rate Estimation**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3614760)
+[[DOI]](https://dl.acm.org/doi/10.1145/3583780.3614760)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	This paper addresses the critical gap in the unbiased estimation of post-click conversion rate (CVR) in recommender systems. Existing CVR prediction methods, such as Inverse Propensity Score (IPS) and various Doubly Robust (DR) based estimators, overlook the impact of propensity estimation on the model bias and variance, thus leading to a debiasing performance gap. We propose a Generalized Propensity Learning (GPL) framework to directly minimize the bias and variance in CVR prediction models. The proposed method works as a complement to existing methods like IPS, DR, MRDR, and DRMSE to improve prediction performance by reducing their bias and variance. Extensive experiments on real-world datasets and semi-synthetic datasets demonstrate the significant performance promotion brought by our proposed method. Data and code can be found at: https://github.com/yuqing-zhou/GPL.
+</details>
+
+<br>
+CIKM 2023,
+**Scalable Neural Contextual Bandit for Recommender Systems**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3615048)
+[[DOI]](https://dl.acm.org/doi/10.1145/3583780.3615048)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	High-quality recommender systems ought to deliver both innovative and relevant content through effective and exploratory interactions with users. Yet, supervised learning-based neural networks, which form the backbone of many existing recommender systems, only leverage recognized user interests, falling short when it comes to efficiently uncovering unknown user preferences. While there has been some progress with neural contextual bandit algorithms towards enabling online exploration through neural networks, their onerous computational demands hinder widespread adoption in real-world recommender systems. In this work, we propose a scalable sample-efficient neural contextual bandit algorithm for recommender systems. To do this, we design an epistemic neural network architecture, Epistemic Neural Recommendation (ENR), that enables Thompson sampling at a large scale. In two distinct large-scale experiments with real-world tasks, ENR significantly boosts click-through rates and user ratings by at least 9% and 6% respectively compared to state-of-the-art neural contextual bandit algorithms. Furthermore, it achieves equivalent performance with at least 29% fewer user interactions compared to the best-performing baseline algorithm. Remarkably, while accomplishing these improvements, ENR demands orders of magnitude fewer computational resources than neural contextual bandit baseline algorithms.
+</details>
+
+<br>
+CIKM 2023,
+**Non-Recursive Cluster-Scale Graph Interacted Model for Click-Through Rate Prediction**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3583780.3615180)
+[[DOI]](https://dl.acm.org/doi/10.1145/3583780.3615180)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Extracting users' interests from their behavior, particularly their 1-hop neighbors, has been shown to enhance Click-Through Rate (CTR) prediction performance. However, online recommender systems impose strict constraints on the inference time of CTR models, which necessitates pruning or filtering users' 1-hop neighbors to reduce computational complexity. Furthermore, while the graph information of users and items has been proven effective in collaborative filtering models, recursive graph convolution can be computationally costly and expensive to implement. To address these challenges, we propose the Non-Recursive Cluster-scale Graph Interacted (NRCGI) model, which reorganizes graph convolutional networks in a non-recursive and cluster-scale view to enable CTR models to consider deep graph information with low computational cost. NRCGI employs non-recursive cluster-scale graph aggregation, which allows the online recommendation computational complexity to shrink from tens of thousands of items to tens to hundreds of clusters. Additionally, since NRCGI aggregates neighbors in a non-recursive view, each hop of neighbors has a clear physical meaning. NRCGI explicitly constructs meaningful interactions between the hops of neighbors of users and items to fully model users' intent towards the given item. Experimental results demonstrate that NRCGI outperforms state-of-the-art baselines in three public datasets and one industrial dataset while maintaining efficient inference.
+</details>
+
+<br>
+CIKM 2023,
+**DPAN: Dynamic Preference-based and Attribute-aware Network for Relevant Recommendations**,
+21-25 Oct 2023,
+[[PDF]](https://dl.acm.org/doi/pdf10.1145/3583780.3615218)
+[[DOI]](https://dl.acm.org/doi/10.1145/3583780.3615218)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	In e-commerce platforms, the relevant recommendation is a unique scenario providing related items for a trigger item that users are interested in. However, users' preferences for the similarity and diversity of recommendation results are dynamic and vary under different conditions. Moreover, individual item-level diversity is too coarse-grained since all recommended items are related to the trigger item. Thus, the two main challenges are to learn fine-grained representations of similarity and diversity and capture users' dynamic preferences for them under different conditions. To address these challenges, we propose a novel method called the Dynamic Preference-based and Attribute-aware Network (DPAN) for predicting Click-Through Rate (CTR) in relevant recommendations. Specifically, based on Attribute-aware Activation Values Generation (AAVG), Bi-dimensional Compression-based Re-expression (BCR) is designed to obtain similarity and diversity representations of user interests and item information. Then Shallow and Deep Union-based Fusion (SDUF) is proposed to capture users' dynamic preferences for the diverse degree of recommendation results according to various conditions. DPAN has demonstrated its effectiveness through extensive offline experiments and online A/B testing, resulting in a significant 7.62% improvement in CTR. Currently, DPAN has been successfully deployed on our e-commerce platform serving the primary traffic for relevant recommendations.
 </details>
 
 <br>
