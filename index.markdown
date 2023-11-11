@@ -36,6 +36,10 @@ List of conferences, ordered by submission deadlines:
 
 
 ## **Journals**
+<!--
+TODO:
+- Frontiers in <something>?
+-->
 [[Conferences]](#conferences) [[Articles]](#articles)
 
 | Journal |
@@ -52,14 +56,25 @@ List of conferences, ordered by submission deadlines:
 
 <!--
 TODO:
+- put dates in the beginning, change CIKM date to 21 Oct only
 - CIKM 2023 papers keyword: recom (still 10%), click (still 22/66), ctr, user, item, lifelong, conversion
-- TKDE Oct/Nov papers (NEXT 09 NOV)
-- TOIS Oct/Nov papers
+- TKDE Oct/Nov papers (latest check 11 Nov)
+- TOIS Oct/Nov papers (NEXT: 13 Nov)
+- ACM TORS (NEXT: 15 Nov)
 -->
 
-
-
-
+<br>
+IEEE TKDE,
+**Learnable Model Augmentation Contrastive Learning for Sequential Recommendation**,
+09 Nov 2023,
+[[PDF]](https://arxiv.org/abs/2204.10128)
+[[DOI]](https://ieeexplore.ieee.org/document/10313990)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Sequential Recommendation (SR) methods play a crucial role in recommender systems, which aims to capture users' dynamic interest from their historical interactions. Recently, Contrastive Learning (CL), which has emerged as a successful method for sequential recommendation, utilizes various data augmentations to generate contrastive views to mine supervised signals from data to alleviate data sparsity issues. However, most existing sequential data augmentation methods may destroy semantic sequential interaction characteristics. Meanwhile, they often adopt random operations when generating contrastive views leading to suboptimal performance. To this end, in this paper, we propose a Learnable Model Augmentation Contrastive learning for sequential Recommendation (LMA4Rec). Specifically, LMA4Rec first takes the model-based augmentation method to generate constructive views. Then, LMA4Rec uses Learnable Bernoulli Dropout (LBD) to implement learnable model augmentation operations. Next, contrastive learning is used between the contrastive views to extract supervised signals. Furthermore, a novel multi-positive contrastive learning loss alleviates the supervised sparsity issue. Finally, experiments on public datasets show that our LMA4Rec method effectively improved sequential recommendation performance compared with the state-of-the-art baseline methods.
+</details>
 
 <br>
 ACM TORS,
@@ -74,6 +89,44 @@ ACM TORS,
 	An increasing number of recommendation systems try to enhance the overall user experience by incorporating conversational interaction. However, evaluating conversational recommender systems (CRSs) from the user’s perspective remains elusive. The GUI-based system evaluation criteria may be inadequate for their conversational counterparts. This paper presents our proposed unifying framework, CRS-Que, to evaluate the user experience of CRSs. This new evaluation framework is developed based on ResQue, a popular user-centric evaluation framework for recommender systems. Additionally, it includes user experience metrics of conversation (e.g., understanding, response quality, humanness) under two dimensions of ResQue (i.e., Perceived Qualities and User Beliefs). Following the psychometric modeling method, we validate our framework by evaluating two conversational recommender systems in different scenarios: music exploration and mobile phone purchase. The results of the two studies support the validity and reliability of the constructs in our framework and reveal how conversation constructs and recommendation constructs interact and influence the overall user experience of the CRS. We believe this framework could help researchers conduct standardized user-centric research for conversational recommender systems and provide practitioners with insights into designing and evaluating a CRS from users’ perspectives.
 </details>
 
+<br>
+IEEE TKDE,
+**Bayes-Enhanced Multi-View Attention Networks for Robust POI Recommendation**,
+02 Nov 2023,
+[[PDF]](https://arxiv.org/abs/2311.00491)
+[[DOI]](https://ieeexplore.ieee.org/document/10305428)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	POI recommendation is practically important to facilitate various Location-Based Social Network (LBSN) services, and has attracted rising research attention recently. Existing works generally assume the available POI check-ins reported by users are the ground-truth depiction of user behaviors. However, in real application scenarios, the check-in data can be rather unreliable (e.g. sparse, incomplete and inaccurate) due to both subjective and objective causes including positioning error and user privacy concerns. The data uncertainty issue may lead to significant negative impacts on the performance of the POI recommendation, but is not fully explored by existing works. To this end, this paper investigates a novel problem of robust POI recommendation by considering the uncertainty factors of the user check-ins, and proposes a Bayes-enhanced Multi-view Attention Network (BayMAN for short) to effectively address it. Specifically, we construct three POI graphs to comprehensively model the dependencies among the POIs from different views, including the personal POI transition graph, the semantic-based POI graph and distance-based POI graph. As the personal POI transition graph is usually sparse and sensitive to noise, we design a Bayes-enhanced spatial dependency learning module for data augmentation from the local view. A Bayesian posterior guided graph augmentation approach is adopted to generate a new graph with collaborative signals to increase the data diversity. Then both the original and the augmented graphs are used for POI representation learning to counteract the data uncertainty issue. Next, the POI representations of the three view graphs are input into the proposed multi-view attention-based user preference learning module. By incorporating the semantic and distance correlations of POIs, the user preference can be effectively refined and finally robust recommendation results are achieved. We conduct extensive experiments over three real-world LSBN datasets. The results show that BayMAN significantly outperforms the state-of-the-art methods in POI recommendation when the available check-ins are incomplete and noisy.
+</details>
+
+<br>
+IEEE TKDE,
+**Towards Hierarchical Intent Disentanglement for Bundle Recommendation**,
+01 Nov 2023,
+[[PDF]](https://ieeexplore.ieee.org/document/10304376)
+[[DOI]](https://doi.org/10.1109/TKDE.2023.3329175)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Bundle recommendation aims to recommend a bundle of items for the user to purchase together, for which two scenarios ( i.e. Next-bundle recommendation and Within-bundle recommendation) are explored to recommend a specific bundle of items for the user and a specific item to fill the user's current bundle, respectively. Previous works largely model the user's preference with a uniform intent, without considering the diversity of intents when adopting the items within the bundle. In the real scenario of bundle recommendation, user intents modeling actually needs to be considered from three hierarchical levels, for that: a user's intents may be naturally distributed in different bundles (user level), one bundle may contain multiple intents of a user (bundle level), and an item in different bundles may also present different user intents (item level). To this end, we develop a novel model, H ierarchical I ntent D isentangle G raph N etworks (HIDGN) for bundle recommendation. HIDGN is capable of capturing the diversity of the user's intent precisely and comprehensively from the hierarchical structure with an cross-task intent contrastive learning, which is unified with the supervised next-/within-bundle recommendation sub-tasks as a multi-task framework. Extensive experiments on three benchmark datasets demonstrate that HIDGN outperforms the state-of-the-art methods by 43.0%, 13.2%, and 73.3%, respectively.
+</details>
+
+<br>
+IEEE TKDE,
+Enhancing Drug Recommendations via Heterogeneous Graph Representation Learning in EHR Networks,
+31 Oct 2023,
+[[PDF]](https://ieeexplore.ieee.org/document/10302298)
+[[DOI]](https://doi.org/10.1109/TKDE.2023.3329025)
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Electronic health records (EHRs) contain vast medical information like diagnosis, medication, and procedures, enabling personalized drug recommendations and treatment adjustments. However, current drug recommendation methods only model patients' health conditions from EHR data, neglecting the rich relationships within the data. This paper seeks to utilize a heterogeneous information network (HIN) to represent EHR and develop a graph representation learning method for medication recommendation. However, three critical issues need to be investigated: (1) co-occurrence of diagnosis and drug for the same patient does not imply their relevance; (2) patients' directly associated information may not be sufficient to reflect their health conditions; and (3) the cold start problem exists when patients have no historical EHRs. To tackle these challenges, we develop a bi-channel heterogeneous local structural encoder to decouple and extract the diverse information in HIN. Additionally, a global information capture and fusion module, aggregating meta-paths to form a global representation, is introduced to fill the information gaps in records. A longitudinal model using rich structural information available in EHR data is proposed for drug recommendations to new patients. Experimental results on real-world EHR data demonstrate significant improvements over existing approaches.
+</details>
 
 <br>
 ACM TORS,
@@ -520,14 +573,3 @@ Existing studies have shown that user-item interaction data and social relation 
 
 <!-- If you'd like to propose other Recommender System venues to track, please send them over to admin@recsys.info -->
 
-<!--
-| AAAI?       |  | - | - | - |
-| NeurIPS?     |  | - | - | - |
-| ACL? ||
-Journal: 
-- ACM Computing Surveys
-- TORS
-- TOIS
-- TKDE
-- Frontiers in something
--->
