@@ -35,6 +35,7 @@ List of conferences, ordered by submission deadlines:
 | [ECIR](https://en.wikipedia.org/wiki/European_Conference_on_Information_Retrieval) | [A](http://portal.core.edu.au/conf-ranks/483/) | [[Papers]](https://ecir2023.org/programs/proceedings.html?v=3.8)<br>📍 Dublin, Ireland<br>🌱 02-06 Apr | [[Website]](https://www.ecir2024.org/)<br>📍 Glasgow, UK<br>🌱 24-28 Mar | **Subm. due: ~ Sep 2024 (TBA)**<br>📍 TBA|
 | [WWW](https://thewebconf.org/)  | [A*](http://portal.core.edu.au/conf-ranks/1548/) | [[Papers]](https://archives.iw3c2.org/www2023/proceedings/)<br>📍 Austin, Texas<br>🌱 30 Apr-04 May | [[Website]](https://www2024.thewebconf.org/)<br>📍 Singapore<br>🌻 13-17 May | **Subm. due: ~ Oct 2024 (TBA)**<br>📍 Sydney, Australia |
 
+
 ## **Journals**
 <!--
 TODO:
@@ -63,12 +64,45 @@ TODO:
 - ACM TORS (NEXT: 15 Nov)
 -->
 
+
 <br>
+<sup>2023-11-11,</sup>
+ACM TOIS,
+**Cross-domain Recommendation via Dual Adversarial Adaptation**,
+<sup>
+	[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3632524)
+	[[DOI]](https://dl.acm.org/doi/10.1145/3632524)
+</sup>
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Data scarcity is a perpetual challenge of recommendation systems, and researchers have proposed a variety of cross-domain recommendation methods to alleviate the problem of data scarcity in target domains. However, in many real-world cross-domain recommendation systems, the source domain and the target domain are sampled from different data distributions, which obstructs the cross-domain knowledge transfer. In this paper, we propose to specifically align the data distributions between the source domain and the target domain to alleviate imbalanced sample distribution and thus challenge the data scarcity issue in the target domain. Technically, our proposed approach builds a dual adversarial adaptation (DAA) framework to adversarially train the target model together with a pre-trained source model. Two domain discriminators play the two-player minmax game with the target model and guide the target model to learn reliable domain-invariant features that can be transferred across domains. At the same time, the target model is calibrated to learn domain-specific information of the target domain. In addition, we formulate our approach as a plug-and-play module to boost existing recommendation systems. We apply the proposed method to address the issues of insufficient data and imbalanced sample distribution in real-world Click-Through Rate (CTR)/Conversion Rate (CVR) predictions on two large-scale industrial datasets. We evaluate the proposed method in scenarios with and without overlapping users/items, and extensive experiments verify that the proposed method is able to significantly improve the prediction performance on the target domain. For instance, our method can boost PLE with a performance improvement of 15.4% in terms of Area Under Curve (AUC) compared with single-domain PLE on our private game dataset. In addition, our method is able to surpass single-domain MMoE by 6.85% on the public datasets. Code: https://github.com/TL-UESTC/DAA.
+</details>
+
+
+<br>
+<sup>2023-11-09,</sup>
+ACM TOIS,
+**Contrastive Multi-View Interest Learning for Cross-Domain Sequential Recommendation**,
+<sup>
+	[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3632402)
+	[[DOI]](https://doi.org/10.1145/3632402)
+</sup>
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Cross-domain recommendation (CDR), which leverages information collected from other domains, has been empirically demonstrated to effectively alleviate data sparsity and cold-start problems encountered in traditional recommendation systems. However, current CDR methods, including those considering time information, do not jointly model the general and current interests within and across domains, which is pivotal for accurately predicting users’ future interactions. In this paper, we propose a Contrastive learning enhanced Multi-View interest learning model (CMVCDR) for cross-domain sequential recommendation. Specifically, we design a static view and a sequential view to model uses’ general interests and current interests, respectively. We divide a user’s general interest representation into a domain-invariant part and a domain-specific part. A cross-domain contrastive learning objective is introduced to impose constraints for optimizing these representations. In the sequential view, we first devise an attention mechanism guided by users’ domain-invariant interest representations to distill cross-domain knowledge pertaining to domain-invariant factors while reducing noise from irrelevant factors. We further design a domain-specific interest-guided temporal information aggregation mechanism to generate users’ current interest representations. Extensive experiments demonstrate the effectiveness of our proposed model compared with state-of-the-art methods.
+</details>
+
+
+<br>
+<sup>2023-11-09,</sup>
 IEEE TKDE,
 **Learnable Model Augmentation Contrastive Learning for Sequential Recommendation**,
-09 Nov 2023,
-[[PDF]](https://arxiv.org/abs/2204.10128)
-[[DOI]](https://ieeexplore.ieee.org/document/10313990)
+<sup>[[PDF]](https://arxiv.org/abs/2204.10128)
+[[DOI]](https://ieeexplore.ieee.org/document/10313990)</sup>
 <details>
 	<summary>
 		Abstract
@@ -76,12 +110,45 @@ IEEE TKDE,
 	Sequential Recommendation (SR) methods play a crucial role in recommender systems, which aims to capture users' dynamic interest from their historical interactions. Recently, Contrastive Learning (CL), which has emerged as a successful method for sequential recommendation, utilizes various data augmentations to generate contrastive views to mine supervised signals from data to alleviate data sparsity issues. However, most existing sequential data augmentation methods may destroy semantic sequential interaction characteristics. Meanwhile, they often adopt random operations when generating contrastive views leading to suboptimal performance. To this end, in this paper, we propose a Learnable Model Augmentation Contrastive learning for sequential Recommendation (LMA4Rec). Specifically, LMA4Rec first takes the model-based augmentation method to generate constructive views. Then, LMA4Rec uses Learnable Bernoulli Dropout (LBD) to implement learnable model augmentation operations. Next, contrastive learning is used between the contrastive views to extract supervised signals. Furthermore, a novel multi-positive contrastive learning loss alleviates the supervised sparsity issue. Finally, experiments on public datasets show that our LMA4Rec method effectively improved sequential recommendation performance compared with the state-of-the-art baseline methods.
 </details>
 
+
 <br>
+<sup>2023-11-07,</sup>
+ACM TOIS,
+**Bi-Preference Learning Heterogeneous Hypergraph Networks for Session-based Recommendation**,
+<sup>
+	[[PDF]](https://arxiv.org/pdf/2311.01125.pdf)
+	[[DOI]](https://doi.org/10.1145/3631940)
+</sup>
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Session-based recommendation intends to predict next purchased items based on anonymous behavior sequences. Numerous economic studies have revealed that item price is a key factor influencing user purchase decisions. Unfortunately, existing methods for session-based recommendation only aim at capturing user interest preference, while ignoring user price preference. Actually, there are primarily two challenges preventing us from accessing price preference. Firstly, the price preference is highly associated to various item features (i.e., category and brand), which asks us to mine price preference from heterogeneous information. Secondly, price preference and interest preference are interdependent and collectively determine user choice, necessitating that we jointly consider both price and interest preference for intent modeling. To handle above challenges, we propose a novel approach Bi-Preference Learning Heterogeneous Hypergraph Networks (BiPNet) for session-based recommendation. Specifically, the customized heterogeneous hypergraph networks with a triple-level convolution are devised to capture user price and interest preference from heterogeneous features of items. Besides, we develop a Bi-Preference Learning schema to explore mutual relations between price and interest preference and collectively learn these two preferences under the multi-task learning architecture. Extensive experiments on multiple public datasets confirm the superiority of BiPNet over competitive baselines. Additional research also supports the notion that the price is crucial for the task.
+</details>
+
+
+<br>
+<sup>2023-11-02,</sup>
+ACM TOIS,
+**Triple Dual Learning for Opinion-Based Explainable Recommendation**,
+<sup>
+	[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3631521)
+	[[DOI]](https://doi.org/10.1145/3631521)
+</sup>
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Recently, with the aim of enhancing the trustworthiness of recommender systems, explainable recommendation has attracted much attention from the research community. Intuitively, users’ opinions towards different aspects of an item determine their ratings (i.e., users’ preferences) for the item. Therefore, rating prediction from the perspective of opinions can realize personalized explanations at the level of item aspects and user preferences. However, there are several challenges in developing an opinion-based explainable recommendation: (1) The complicated relationship between users’ opinions and ratings. (2) The difficulty of predicting the potential (i.e., unseen) user-item opinions because of the sparsity of opinion information. To tackle these challenges, we propose an overall preference-aware opinion-based explainable rating prediction model by jointly modeling the multiple observations of user-item interaction (i.e., review, opinion, rating). To alleviate the sparsity problem and raise the effectiveness of opinion prediction, we further propose a triple dual learning-based framework with a novelly designed triple dual constraint. Finally, experiments on three popular datasets show the effectiveness and great explanation performance of our framework.
+</details>
+
+
+<br>
+<sup>2023-11-02,</sup>
 ACM TORS,
 **CRS-Que: A User-Centric Evaluation Framework for Conversational Recommender Systems**,
-02 Nov 2023,
-[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3631534)
-[[DOI]](https://doi.org/10.1145/3631534)
+<sup>[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3631534)
+[[DOI]](https://doi.org/10.1145/3631534)</sup>
 <details>
 	<summary>
 		Abstract
@@ -89,12 +156,13 @@ ACM TORS,
 	An increasing number of recommendation systems try to enhance the overall user experience by incorporating conversational interaction. However, evaluating conversational recommender systems (CRSs) from the user’s perspective remains elusive. The GUI-based system evaluation criteria may be inadequate for their conversational counterparts. This paper presents our proposed unifying framework, CRS-Que, to evaluate the user experience of CRSs. This new evaluation framework is developed based on ResQue, a popular user-centric evaluation framework for recommender systems. Additionally, it includes user experience metrics of conversation (e.g., understanding, response quality, humanness) under two dimensions of ResQue (i.e., Perceived Qualities and User Beliefs). Following the psychometric modeling method, we validate our framework by evaluating two conversational recommender systems in different scenarios: music exploration and mobile phone purchase. The results of the two studies support the validity and reliability of the constructs in our framework and reveal how conversation constructs and recommendation constructs interact and influence the overall user experience of the CRS. We believe this framework could help researchers conduct standardized user-centric research for conversational recommender systems and provide practitioners with insights into designing and evaluating a CRS from users’ perspectives.
 </details>
 
+
 <br>
+<sup>2023-11-02,</sup>
 IEEE TKDE,
 **Bayes-Enhanced Multi-View Attention Networks for Robust POI Recommendation**,
-02 Nov 2023,
-[[PDF]](https://arxiv.org/abs/2311.00491)
-[[DOI]](https://ieeexplore.ieee.org/document/10305428)
+<sup>[[PDF]](https://arxiv.org/abs/2311.00491)
+[[DOI]](https://ieeexplore.ieee.org/document/10305428)</sup>
 <details>
 	<summary>
 		Abstract
@@ -103,11 +171,13 @@ IEEE TKDE,
 </details>
 
 <br>
+<sup>2023-11-01,</sup>
 IEEE TKDE,
 **Towards Hierarchical Intent Disentanglement for Bundle Recommendation**,
-01 Nov 2023,
-[[PDF]](https://ieeexplore.ieee.org/document/10304376)
-[[DOI]](https://doi.org/10.1109/TKDE.2023.3329175)
+<sup>
+	[[PDF]](https://ieeexplore.ieee.org/document/10304376)
+	[[DOI]](https://doi.org/10.1109/TKDE.2023.3329175)
+</sup>
 <details>
 	<summary>
 		Abstract
@@ -116,17 +186,36 @@ IEEE TKDE,
 </details>
 
 <br>
+<sup>2023-10-31,</sup>
 IEEE TKDE,
-Enhancing Drug Recommendations via Heterogeneous Graph Representation Learning in EHR Networks,
-31 Oct 2023,
-[[PDF]](https://ieeexplore.ieee.org/document/10302298)
-[[DOI]](https://doi.org/10.1109/TKDE.2023.3329025)
+**Enhancing Drug Recommendations via Heterogeneous Graph Representation Learning in EHR Networks**,
+<sup>
+	[[PDF]](https://ieeexplore.ieee.org/document/10302298)
+	[[DOI]](https://doi.org/10.1109/TKDE.2023.3329025)
+</sup>
 <details>
 	<summary>
 		Abstract
 	</summary>
 	Electronic health records (EHRs) contain vast medical information like diagnosis, medication, and procedures, enabling personalized drug recommendations and treatment adjustments. However, current drug recommendation methods only model patients' health conditions from EHR data, neglecting the rich relationships within the data. This paper seeks to utilize a heterogeneous information network (HIN) to represent EHR and develop a graph representation learning method for medication recommendation. However, three critical issues need to be investigated: (1) co-occurrence of diagnosis and drug for the same patient does not imply their relevance; (2) patients' directly associated information may not be sufficient to reflect their health conditions; and (3) the cold start problem exists when patients have no historical EHRs. To tackle these challenges, we develop a bi-channel heterogeneous local structural encoder to decouple and extract the diverse information in HIN. Additionally, a global information capture and fusion module, aggregating meta-paths to form a global representation, is introduced to fill the information gaps in records. A longitudinal model using rich structural information available in EHR data is proposed for drug recommendations to new patients. Experimental results on real-world EHR data demonstrate significant improvements over existing approaches.
 </details>
+
+
+<br>
+<sup>2023-10-28,</sup>
+ACM TOIS,
+**Community preserving social recommendation with Cyclic Transfer Learning**,
+<sup>
+	[[PDF]](https://dl.acm.org/doi/pdf/10.1145/3631115)
+	[[DOI]](https://doi.org/10.1145/3631115)
+</sup>
+<details>
+	<summary>
+		Abstract
+	</summary>
+	Transfer learning-based recommendation mitigates the sparsity of user-item interactions by introducing auxiliary domains. Social influence extracted from direct connections between users typically serves as an auxiliary domain to improve prediction performance. However, direct social connections also face severe data sparsity problems that limit model performance. In contrast, users’ dependency on communities is another valuable social information that has not yet received sufficient attention. Although studies have incorporated community information into recommendation by aggregating users’ preferences within the same community, they seldom capture the structural discrepancies among communities and the influence of structural discrepancies on users’ preferences. To address these challenges, we propose a community-preserving recommendation framework with cyclic transfer learning, incorporating heterogeneous community influence into the rating domain. We analyze the characteristics of the community domain and its inter-influence on the rating domain, and construct link constraints and preference constraints in the community domain. The shared vectors that bridge the rating domain and the community domain are allowed to be more consistent with the characteristics of both domains. Extensive experiments are conducted on four real-world datasets. The results manifest the excellent performance of our approach in capturing real users’ preferences compared with other state-of-the-art methods.
+</details>
+
 
 <br>
 ACM TORS,
